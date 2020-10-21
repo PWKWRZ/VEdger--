@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VEdger", "VEdger\VEdger.csproj", "{48124F2A-192F-4486-AAD0-D1A61D386603}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VEdger.Tests", "VEdger.Tests\VEdger.Tests.csproj", "{B1EE5FEC-E2BC-4400-BFA8-1A5746080D68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48124F2A-192F-4486-AAD0-D1A61D386603}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48124F2A-192F-4486-AAD0-D1A61D386603}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48124F2A-192F-4486-AAD0-D1A61D386603}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48124F2A-192F-4486-AAD0-D1A61D386603}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1EE5FEC-E2BC-4400-BFA8-1A5746080D68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1EE5FEC-E2BC-4400-BFA8-1A5746080D68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1EE5FEC-E2BC-4400-BFA8-1A5746080D68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1EE5FEC-E2BC-4400-BFA8-1A5746080D68}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4457509C-8DA5-49BE-9D8A-7FD60D4496D2}
+	EndGlobalSection
+EndGlobal

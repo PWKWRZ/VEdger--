@@ -1,0 +1,115 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background-image: url(BgImage/ham.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.form-horizontal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 510px;
+    height: 660px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    text-align: center;
+    border: dashed 3px rgba(252, 6, 6, 0.6);
+    background: rgba(36, 36, 33, 0.90);
+}
+
+img {
+    position: center;
+    margin-left:5%;
+}
+
+
+.passplace {
+    font-weight: bold;
+    margin-right: 49%;
+    color: white;
+    margin-top: 15px;
+}
+.confirmplace {
+    font-weight: bold;
+    margin-right: 37%;
+    color: white;
+    margin-top: 15px;
+}
+
+.emailplace {
+    font-weight: bold;
+    margin-right: 55%;
+    color: white;
+}
+
+.txtemail, .txtpass, .btnsubmit {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.txtemail {
+    border: none;
+    border-bottom: 3px solid #fff;
+    outline: none;
+    height: 30px;
+    color: #fff;
+    font-size: 16px;
+    background-color: transparent;
+    margin-left: 18%;
+}
+
+.txtpass {
+    border: none;
+    border-bottom: 3px solid #fff;
+    outline: none;
+    height: 30px;
+    color: #fff;
+    font-size: 16px;
+    background-color: transparent;
+    margin-left: 18%;
+}
+
+.form-group-check {
+    font-weight: bold;
+    margin-right: 40%;
+    color: white;
+    font-weight: bold
+}
+
+.btnsubmit {
+    margin-left: -26%;
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(170deg, #b42525 28%, #35d8dd);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+p {
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 80%;
+    margin-top:-10%;
+}
+
+.text-danger {
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    margin-left: 10%;
+    font-family: sans-serif;
+    width: 100px;
+    white-space: nowrap;
+    
+}
+

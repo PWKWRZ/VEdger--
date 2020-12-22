@@ -22,7 +22,7 @@
 
 img {
     position: center;
-    margin-left:5%;
+    margin-left: 5%;
 }
 
 
@@ -73,12 +73,7 @@ img {
     margin-left: 18%;
 }
 
-.form-group-check {
-    font-weight: bold;
-    margin-right: 40%;
-    color: white;
-    font-weight: bold
-}
+
 
 .btnsubmit {
     margin-left: -26%;

@@ -1,0 +1,61 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background-image: url(BgImage/home.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+img {
+    position: absolute;
+    bottom: 60%;
+    left: 36%;
+}
+a.one {
+    position: absolute;
+    bottom: 35%;
+    left: 16%;
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: 30px;
+    background: -webkit-linear-gradient(#00efff, #ff5e5e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.Tekst {
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+    margin-left: 16%;
+    margin-bottom:2%;
+    font-family: Comic Sans MS
+}
+
+.mainContainer__circle {
+    position: fixed;
+    top: 80%;
+    right: -320px;
+    display: flex;
+    align-items: center;
+    width: 65rem;
+    height: 65rem;
+    background: #ebebeb;
+    border-radius: 90%;
+    border: solid 4px #00efff;
+    left: 13%;
+    transform: translate(-50%,-50%);
+    opacity: 0.70;
+}
+.lu {
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+    white-space: normal;
+    position: absolute;
+    bottom: 218px;
+    left: 50%;
+    font-family: Comic Sans MS
+}
+
+

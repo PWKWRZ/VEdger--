@@ -20,6 +20,15 @@ namespace VEdger.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+
+        public DbSet<Photos> Photos { get; set; }
+        public DbSet<MatchStatus> MatchStatus { get; set; }
+        public DbSet<UserData> UserData { get; set; }
+       
+        //public DbSet<Relationship> Relationship { get; set; }
+        //public DbSet<FoodPre> UserData { get; set; }
+
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

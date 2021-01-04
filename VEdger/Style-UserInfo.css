@@ -1,0 +1,103 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box,;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    background: #010615;
+    margin-left: 25%;
+}
+
+
+img {
+    width: 100%;
+    max-width: 200px;
+    border: 2px dashed #f00;
+    border-radius: 25px;
+    position: relative;
+    margin-left: 122%;
+    margin-bottom: 218%;
+}
+
+.testy {
+    margin-left: 134%;
+    margin-top: -99%;
+    
+}
+
+
+
+.save {
+    margin-left: 6%;
+    margin-top: 89%;
+}
+
+
+
+
+
+
+.form {
+    position: relative;
+    width: 690px;
+    height: 690px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #060c21;
+    margin: 40px;
+    margin-top: 8%;
+}
+
+
+.ustawienie {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: block;
+    background: rgba(255,255,255,.1);
+}
+
+.form .content {
+    color: #fff;
+    margin-left: 10%;
+}
+
+.form:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+
+.form:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+    filter: blur(40px);
+}
+
+
+.form:nth-child(1):before,
+.form:nth-child(1):after {
+    background: linear-gradient(235deg,#00ffff,#010615,#f00);
+}

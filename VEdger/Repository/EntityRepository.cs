@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.Data.Entity;
+    using System.Data.Entity.Migrations;
     using System.Linq;
     using VEdger.Models;
 
@@ -51,9 +52,7 @@
         public void Update<T>(
             TEntity entityForUpdate)
         {
-            this.dbSet.Attach(entityForUpdate);
-            context.Entry(entityForUpdate).State = EntityState.Modified;
-
+            this.context.Set<TEntity>().AddOrUpdate(entityForUpdate);
             context.SaveChangesAsync();
         }
     }

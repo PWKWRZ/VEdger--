@@ -1,26 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace VEdger.Repository
+﻿namespace VEdger.Repository
 {
-    public interface IRepository <T>
+    using System.Collections.Generic;
+    public interface IRepository <TEntity>
     {
         /// <summary>
         /// Creates one new entity
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="entity"></param>
-        void Create<T>(T entity);
+        void Create<T>(TEntity entity);
 
         /// <summary>
         /// Returns entities
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <returns></returns>
-        IEnumerable<T> Read<T>();
+        IEnumerable<TEntity> Read<TEntity>();
 
         /// <summary>
         /// Returns one entity by id
@@ -28,7 +23,8 @@ namespace VEdger.Repository
         /// <typeparam name="T"></typeparam>
         /// <param name="id"></param>
         /// <returns></returns>
-        T Read<T>(int id);
+        T Read<T>(
+            int id);
 
         /// <summary>
         /// Returns filtered entities
@@ -36,20 +32,20 @@ namespace VEdger.Repository
         /// <typeparam name="T"></typeparam>
         /// <param name="parameters"></param>
         /// <returns></returns>
-        IEnumerable<T> Read<T>(T parameters);
+        IEnumerable<TEntity> Read<T>(TEntity parameters);
 
         /// <summary>
         /// Updates one entity
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="entityForUpdate"></param>
-        void Update<T>(T entityForUpdate);
+        void Update<T>(TEntity entityForUpdate);
 
         /// <summary>
         /// Deletes one entity
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="entityForDeletion"></param>
-        void Delete<T>(T entityForDeletion);
+        void Delete<T>(TEntity entityForDeletion);
     }
 }

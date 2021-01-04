@@ -12,7 +12,6 @@
 
         [HttpGet]
         public ActionResult Index()
-
         {
             var data = repository.Read<UserData>().FirstOrDefault();
             return View(data);
@@ -23,13 +22,12 @@
             UserData data)
 
         {
-            var dataa = repository.Read<UserData>(data);
-            if(dataa == null)
+            var dataFromRepository = repository.Read<UserData>(data);
+            if(dataFromRepository == null)
             {
                 repository.Create<UserData>(data);
             }
-
-            if(dataa?.Count() == 0)
+            else if(dataFromRepository?.Count() == 0)
             {
                 repository.Create<UserData>(data);
             }

@@ -41,12 +41,6 @@
             throw new NotImplementedException();
         }
 
-        public IEnumerable<T> Read<T>(
-            T parameters)
-        {
-            throw new NotImplementedException();
-        }
-
         public IEnumerable<TEntity> Read<T>(
             TEntity parameters)
         {

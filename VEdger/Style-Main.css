@@ -1,0 +1,455 @@
+﻿body {
+    background-image: url('BgImage/main.jpg');
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+
+
+.side {
+    max-width: 400px;
+    width: 400px;
+    height: 360px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: dashed 4px rgb(149, 30, 8);
+    top: 7%;
+    position: absolute;
+    border-radius: 20px;
+    overflow: auto;
+}
+
+
+
+
+
+
+
+
+.side .header {
+    background-color: rgba(0, 0, 0, 0.7); 
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 1px 8px 0 rgba(0, 20, 20, 0.2);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 20px;
+    justify-content:space-evenly;
+}
+
+    .side .header .avatar img {
+        width: 60px;
+        height: 60px;
+        border-radius: 40px;
+        border: 4px solid #fff;
+        box-shadow: 0 1px 8px 0 rgba(0, 20, 20, 0.2);
+        margin-left: 20%;
+    }
+
+    .side .header .title {
+        padding: 0 10px;
+        color: #fff;
+        font-size: 23px;
+        margin-left: 3%;
+    }
+
+
+
+
+.side .menu ul {
+    display: flex;
+    padding: 0 3px;
+}
+
+    .side .menu ul li {
+        list-style: none;
+        margin: 0 10px;
+        font-weight: 700;
+        font-size: 19px;
+        letter-spacing: 0.5px;
+        color: #fff;
+        border-radius: 10px;
+    }
+
+.side .menu .active {
+    border-bottom: 4px solid #fd5068;
+    padding-bottom: 2px;
+    border-color: rgb(103, 17, 11);
+    
+}
+
+.side .messagess {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s box-shadow;
+    box-shadow: #fff;
+    
+}
+.messagess:hover {
+    background-color:#3c3c3c;
+    
+}
+
+.side .messagess .avatar img {
+    width: 70px;
+    height: 70px;
+    border-radius: 40px;
+    border: dashed 2px rgb(144, 9, 0);
+    margin-left: -9%;
+}
+
+.side .messagess .user {
+    padding: 0 10px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    color: #fff;
+    
+}
+
+.side .messagess .text {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 10px;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 0.8;
+    color: #fff;
+
+}
+
+.side .messagess:hover {
+    box-shadow: 0 0 12px 0 rgba(43, 78, 78, 0.1);
+    border-right: 6px solid #fd5068;
+    border-color: #fff;
+    border-radius: 20px;
+}
+
+.content {
+    width:100px;
+    height:100px;
+    position: absolute;
+    padding: 20px 0;
+    align-items: center;
+    margin-left: 365px;
+    margin-top: 20%;
+}
+
+
+.container .card {
+    position: relative;
+    height: 350px;
+}
+
+.content .card .user {
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 1px 10px 0 rgba(0, 20, 20, 0.5);
+}
+
+
+
+    .content .card .user .profile {
+        position: absolute;
+        bottom: 0px;
+        margin-left: 35px;
+
+    }
+
+        .content .card .user .profile .diet img {
+            position: absolute;
+            bottom: 35%;
+            margin-left: -100%;
+            height: 26px;
+        }
+
+        .content .card .user .profile .country img {
+            position: absolute;
+            bottom: 3%;
+            margin-left: -77%;
+            height: 22px;
+        }
+        .content .card .user .profile .name img {
+            position: absolute;
+            bottom: 73%;
+            margin-left: -128%;
+            height:18px;
+        }
+
+    .content .card .user .profile {
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        text-shadow: 1px 1px 5px #444;
+        white-space: nowrap;
+        margin-top: 30%;
+        font-family:sans-serif;
+    }
+
+    .content .card .user .photo img {
+        height: 360px;
+        width: 400px;
+        border-radius: 20px;
+        border: dashed 4px rgb(148, 30, 8);
+    }
+
+
+
+
+    .content .card .user .name span {
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+
+
+
+
+
+.content .buttons {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+    .content .buttons .rewind img {
+        color: #fd2e79;
+        font-size: 22px;
+        width: 80px;
+        margin-left:-5%;
+    }
+
+    .content .buttons .yes img {
+        color: #2bb1ff;
+        font-size: 22px;
+        width: 80px;
+
+    }
+
+    .content .buttons .no img {
+        color: #11e298;
+        font-size: 22px;
+        width:80px;
+
+    }
+
+    .content .buttons .no,
+    .content .buttons .yes,
+    .content .buttons .rewind {
+        background-color: #3c3c3c;
+        width: 90px;
+        height: 80px;
+        box-shadow: 0 1px 10px 0 rgba(0, 20, 20, 0.1);
+        border-radius: 70px;
+        margin: 4px;
+        transition: 0.3s transform;
+    }
+
+        .content .buttons .no:hover,
+        .content .buttons .yes:hover,
+        .content .buttons .rewind:hover {
+            transform: scale(1.3);
+        }
+
+    .content .buttons .no{
+        margin-left:50%;
+    }
+    .content .buttons .yes{
+        margin-left:58%;
+    }
+
+    .content .buttons .rewind {
+        margin-left:20%
+    }
+.sidee {
+    max-width: 400px;
+    width: 400px;
+    height: 360px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: dashed 4px rgb(148, 30, 8);
+    top: 7%;
+    margin-left: 38%;
+    position: absolute;
+    border-radius: 20px;
+    overflow: auto;
+}
+
+
+.sidee .header {
+    background-color: rgba(0, 0, 0, 0.7); 
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 1px 8px 0 rgba(0, 20, 20, 0.2);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 20px;
+
+}
+
+
+    .sidee .header .title {
+        padding: 0 10px;
+        color: #fff;
+        font-size: 23px;
+        margin-left: 33%;
+    }
+
+
+
+.sidee .menu ul {
+    display: flex;
+    padding: 0 3px;
+
+
+}
+
+    .sidee .menu ul li {
+        list-style: none;
+        margin: 0 10px;
+        font-weight: 700;
+        font-size: 19px;
+        letter-spacing: 0.5px;
+        color: #fff;
+        border-radius: 10px;
+    }
+
+.sidee .menu .active {
+    border-bottom: 4px solid #fd5068;
+    padding-bottom: 2px;
+    border-color: rgb(103, 17, 11);
+
+}
+
+    .sidee .messages {
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        display: inline-table;
+        justify-content:space-evenly;
+    }
+
+        .sidee .messages .avatar img {
+            width: 70px;
+            height: 70px;
+            border-radius: 40px;
+            border: dashed 2px rgb(144, 9, 0);
+            margin-left: 3%;
+        }
+
+        .sidee .messages .user {
+            padding: 2px 7px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            font-size: 15px;
+            color: #fff;
+            margin-left: 3%;
+            text-align: center;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

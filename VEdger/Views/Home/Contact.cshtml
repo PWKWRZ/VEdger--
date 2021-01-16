@@ -1,4 +1,4 @@
-﻿
+
 <head>
     <link href="~/Style-Settings.css" rel="stylesheet" />
 </head>
@@ -17,19 +17,23 @@
                                             <h1>Maximum Distance in km</h1>
                                             <div class="box">
                                                 <div class="slider">
-                                                    <input type="range"  min="0" max="300" value="0" />
+
+                                                    <input type="range" min="0" max="300" value="0" />
+
                                                 </div>
                                                 <div class="value">0</div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <h1>Gender</h1>
-                                                <select class="form-control">
-                                                    <option selected="">Select Gender</option>
-                                                    <option> Only Male</option>
-                                                    <option> Only Female</option>
-                                                    <option>Other</option>
-                                                </select>
+
+                                            <select class="form-control">
+                                                <option selected="">Select Gender</option>
+                                                <option> Only Male</option>
+                                                <option> Only Female</option>
+                                                <option>Other</option>
+                                            </select>
+
                                         </div>
                                         <div class="row">
                                             <h1> Age Range </h1>
@@ -59,9 +63,12 @@
                                                 <label>Other</label><br>
                                             </div>
                                         </div>
-                                    <div class="save">
-                                        <div class="col d-flex justify-content-end">
-                                            <button class="btn btn-primary" type="submit">Save Changes</button>
+
+                                        <div class="save">
+                                            <div class="col d-flex justify-content-end">
+                                                <button class="btn btn-primary" type="submit">Save Changes</button>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -70,9 +77,9 @@
                     </div>
                 </div>
             </div>
-           </div>
-      </form>
-    </div>
+        </form>
+   </div>
+
 
     <script>
         const slider = document.querySelector("input");

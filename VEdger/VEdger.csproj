@@ -204,9 +204,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BgImage\1.jpg" />
+
+    <Content Include="BgImage\12.jpeg" />
+    <Content Include="BgImage\main.jpg" />
+    <Content Include="BgImage\broken.png" />
+    <Content Include="BgImage\burger.png" />
+    <Content Include="BgImage\Edit.png" />
+    <Content Include="BgImage\heart.png" />
+
     <Content Include="BgImage\home.jpg" />
     <Content Include="BgImage\ham.jpg" />
     <Content Include="BgImage\Logo.png" />
+    <Content Include="BgImage\name.png" />
+    <Content Include="BgImage\place.png" />
+    <Content Include="BgImage\rewind.png" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -232,6 +243,9 @@
     <Content Include="Style-Index.css" />
     <Content Include="Style-Login.css" />
     <Content Include="Style-Register.css" />
+
+    <Content Include="Style-Settings.css" />
+
     <Content Include="Style-UserInfo.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

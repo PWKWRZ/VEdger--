@@ -20,11 +20,16 @@
                 @Html.ActionLink("VEdger", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Profile", "UserDataSettings/" + User.Identity.GetUserId(), "UserMenagement")</li>
-                    <li>@Html.ActionLink("Settings", "SearchMatchSettings/" + User.Identity.GetUserId(), "UserMenagement")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
+                @if (Request.IsAuthenticated)
+                {
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Profile", "UserDataSettings/" + User.Identity.GetUserId(), "UserMenagement")</li>
+                        <li>@Html.ActionLink("Settings", "SearchMatchSettings/" + User.Identity.GetUserId(), "UserMenagement")</li>
+
+                    </ul>
+                } else {
+                    @Html.Partial("_LoginPartial")
+                }
             </div>
         </div>
     </div>

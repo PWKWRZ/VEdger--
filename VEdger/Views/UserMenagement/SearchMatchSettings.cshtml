@@ -1,4 +1,5 @@
-  @model VEdger.Models.MatchingSettings
+@model VEdger.Responses.MatchingSettingsResponse
+    @using System.Web.Mvc
 <head>
     <link href="~/Style-Settings.css" rel="stylesheet" />
 </head>
@@ -53,29 +54,29 @@
                                         </div>
                                         <div class="row">
                                             <h1> Age Range </h1>
-                                            @{ List<SelectListItem>  listItems2= new List<SelectListItem>();
-                                                listItems.Add(new SelectListItem
+                                            @{ List<SelectListItem>  listItems2 = new List<SelectListItem>();
+                                                listItems2.Add(new SelectListItem
                                                 {
                                                     Text = "18-24",
                                                     Value = "0"
                                                 });
-                                                listItems.Add(new SelectListItem
+                                                listItems2.Add(new SelectListItem
                                                 {
                                                     Text = "25-30",
                                                     Value = "1"
 
                                                 });
-                                                listItems.Add(new SelectListItem
+                                                listItems2.Add(new SelectListItem
                                                 {
                                                     Text = "30-49",
                                                     Value = "2"
                                                 });
-                                                listItems.Add(new SelectListItem
+                                                listItems2.Add(new SelectListItem
                                                 {
                                                     Text = "50-64",
                                                     Value = "3"
                                                 });
-                                                listItems.Add(new SelectListItem
+                                                listItems2.Add(new SelectListItem
                                                 {
                                                     Text = "65+",
                                                     Value = "4"
@@ -83,7 +84,7 @@
                                              }
                                             @Html.DropDownList("ageRangeList", listItems2, new { @class = "form-control" })
                                         </div>
-  @*                                          <select class="form-control">
+                                        @*<select class="form-control">
                                                 <option selected="">none</option>
                                                 <option> 18–24</option>
                                                 <option> 25–30</option>
@@ -92,23 +93,17 @@
                                                 <option> 65+</option>
                                             </select>*@
                                         </div>
-                                        <div class="row">
-                                            <h1>Expected Dietary Preference</h1>
-                                            <div class="check">
-                                                <input type="checkbox" name="" value="" />
-                                                <label>Omnivorous</label><br>
-                                                <input type="checkbox" name="" value="" />
-                                                <label>Semi-vegetarianism</label><br>
-                                                <input type="checkbox" name="" value="" />
-                                                <label>Lactive-vegetarianism</label><br>
-                                                <input type="checkbox" name="" value="" />
-                                                <label>Vegetarianism</label><br>
-                                                <input type="checkbox" name="" value="" />
-                                                <label>Fruitarianizm</label><br>
-                                                <input type="checkbox" name="" value="" />
-                                                <label>Other</label><br>
-                                            </div>
+                                    <div class="row">
+                                        <h1>Expected Dietary Preference</h1>
+                                        *@
+                                        <div class="check">
+                                            @foreach(var checkbox in Model.fpe)
+                                            {
+                                                <input type="checkbox" name="" value=@checkbox.Value />
+                                                <label>@checkbox.Text</label><br>
+                                            }
                                         </div>
+                                    </div>
 
                                         <div class="save">
                                             <div class="col d-flex justify-content-end">

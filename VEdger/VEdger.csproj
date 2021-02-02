@@ -190,13 +190,21 @@
     <Compile Include="Migrations\202012220628211_0001.Designer.cs">
       <DependentUpon>202012220628211_0001.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102021241583_revoke.cs" />
+    <Compile Include="Migrations\202102021241583_revoke.Designer.cs">
+      <DependentUpon>202102021241583_revoke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102021427327_newtryModel.cs" />
+    <Compile Include="Migrations\202102021427327_newtryModel.Designer.cs">
+      <DependentUpon>202102021427327_newtryModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\FoodPreferenceEnum.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels - Copy.cs" />
     <Compile Include="Models\MatchStatus.cs" />
-    <Compile Include="Models\MatchingSettings.cs" />
+    <Compile Include="Queries\Responses\MatchingSettingsResponse.cs" />
     <Compile Include="Models\Photos.cs" />
     <Compile Include="Models\Relationship.cs" />
     <Compile Include="Models\UserData.cs" />
@@ -284,6 +292,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Queries\Requests\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -301,6 +310,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202012220628211_0001.resx">
       <DependentUpon>202012220628211_0001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102021241583_revoke.resx">
+      <DependentUpon>202102021241583_revoke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102021427327_newtryModel.resx">
+      <DependentUpon>202102021427327_newtryModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

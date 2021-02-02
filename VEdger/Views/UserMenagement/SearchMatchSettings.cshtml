@@ -1,4 +1,4 @@
-
+  @model VEdger.Models.MatchingSettings
 <head>
     <link href="~/Style-Settings.css" rel="stylesheet" />
 </head>
@@ -17,34 +17,80 @@
                                             <h1>Maximum Distance in km</h1>
                                             <div class="box">
                                                 <div class="slider">
-
                                                     <input type="range" min="0" max="300" value="0" />
-
                                                 </div>
                                                 <div class="value">0</div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <h1>Gender</h1>
+                                            @{ List<SelectListItem> listItems = new List<SelectListItem>();
+                                                listItems.Add(new SelectListItem
+                                                {
+                                                    Text = "Only Male",
+                                                    Value = "0"
+                                                });
+                                                listItems.Add(new SelectListItem
+                                                {
+                                                    Text = "Only Female",
+                                                    Value = "1"
 
-                                            <select class="form-control">
+                                                });
+                                                listItems.Add(new SelectListItem
+                                                {
+                                                    Text = "Other",
+                                                    Value = "2"
+                                                });
+                                            }
+                                            @Html.DropDownList("genderList", listItems, new { @class = "form-control" })
+@*                                            <select class="form-control">
                                                 <option selected="">Select Gender</option>
                                                 <option> Only Male</option>
                                                 <option> Only Female</option>
                                                 <option>Other</option>
-                                            </select>
+                                            </select>*@
 
                                         </div>
                                         <div class="row">
                                             <h1> Age Range </h1>
-                                            <select class="form-control">
+                                            @{ List<SelectListItem>  listItems2= new List<SelectListItem>();
+                                                listItems.Add(new SelectListItem
+                                                {
+                                                    Text = "18-24",
+                                                    Value = "0"
+                                                });
+                                                listItems.Add(new SelectListItem
+                                                {
+                                                    Text = "25-30",
+                                                    Value = "1"
+
+                                                });
+                                                listItems.Add(new SelectListItem
+                                                {
+                                                    Text = "30-49",
+                                                    Value = "2"
+                                                });
+                                                listItems.Add(new SelectListItem
+                                                {
+                                                    Text = "50-64",
+                                                    Value = "3"
+                                                });
+                                                listItems.Add(new SelectListItem
+                                                {
+                                                    Text = "65+",
+                                                    Value = "4"
+                                                });
+                                             }
+                                            @Html.DropDownList("ageRangeList", listItems2, new { @class = "form-control" })
+                                        </div>
+  @*                                          <select class="form-control">
                                                 <option selected="">none</option>
                                                 <option> 18–24</option>
                                                 <option> 25–30</option>
                                                 <option> 30–49</option>
                                                 <option> 50–64 </option>
                                                 <option> 65+</option>
-                                            </select>
+                                            </select>*@
                                         </div>
                                         <div class="row">
                                             <h1>Expected Dietary Preference</h1>
@@ -76,8 +122,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </form>
+         </form>   
    </div>
 
 

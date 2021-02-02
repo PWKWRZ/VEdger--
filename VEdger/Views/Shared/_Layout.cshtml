@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNet.Identity
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -20,16 +21,15 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Profile", "Index", "UserInfo")</li>
-                    <li>@Html.ActionLink("Settings", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Main page", "About", "Home")</li>
+                    <li>@Html.ActionLink("Profile", "UserDataSettings/" + User.Identity.GetUserId(), "UserMenagement")</li>
+                    <li>@Html.ActionLink("Settings", "SearchMatchSettings/" + User.Identity.GetUserId(), "UserMenagement")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
     <div class="container body-content">
-        @RenderBody() 
+        @RenderBody()
     </div>
 
     @Scripts.Render("~/bundles/jquery")

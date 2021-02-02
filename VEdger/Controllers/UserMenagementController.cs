@@ -5,21 +5,20 @@
     using VEdger.Models;
     using VEdger.Repository;
 
-    public class UserInfoController : Controller
+    public class UserMenagementController : Controller
     {
 
         readonly IRepository<UserData> repository = new EntityRepository<UserData>();
 
         [HttpGet]
-        public ActionResult Index()
+        public ActionResult UserDataSettings()
         {
             var data = repository.Read<UserData>().FirstOrDefault();
             return View(data);
         }
 
         [HttpPost]
-        public ActionResult Index(
-            UserData data)
+        public ActionResult UserDataSettings(UserData data)
 
         {
             var dataFromRepository = repository.Read<UserData>(data);

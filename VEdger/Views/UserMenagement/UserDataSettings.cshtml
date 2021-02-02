@@ -32,19 +32,20 @@
                                                 <div class="col">
                                                     <div class="form-group">
                                                         <label>Full Name</label>
-                                                        <input class="form-control" type="text" name="name" />
+                                                        <input class="form-control" type="text" name="name" value="@Model.first_name" />
                                                     </div>
+
                                                 </div>
                                                 <div class="col">
                                                     <div class="form-group">
                                                         <label>Date of Birth</label>
-                                                        <input class="form-control" type="date" name="age" />
+                                                        <input class="form-control" type="date" name="age" value="@Model.date_of_birth" />
                                                     </div>
                                                 </div>
                                                 <div class="col">
                                                     <div class="form-group">
                                                         <label>Username</label>
-                                                        <input class="form-control" type="text" name="username" />
+                                                        <input class="form-control" type="text" name="username" value="@Model.username" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -52,7 +53,7 @@
                                                 <div class="col">
                                                     <div class="form-group">
                                                         <label>Email</label>
-                                                        <input class="form-control" type="email" />
+                                                        <input class="form-control" type="email" value="@Model.email" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -60,19 +61,82 @@
                                                 <div class="col">
                                                     <div class="form-group">
                                                         <label>Gender</label>
-                                                        <select class="form-control">
+                                                        @{ List<SelectListItem> listItems = new List<SelectListItem>();
+                                                            listItems.Add(new SelectListItem
+                                                            {
+                                                                Text = "Only Male",
+                                                                Value = "0"
+                                                            });
+                                                            listItems.Add(new SelectListItem
+                                                            {
+                                                                Text = "Only Female",
+                                                                Value = "1"
+
+                                                            });
+                                                            listItems.Add(new SelectListItem
+                                                            {
+                                                                Text = "Other",
+                                                                Value = "2"
+                                                            });
+                                                        }
+                                                        @Html.DropDownList("genderList", listItems, new { @class = "form-control" })
+                                                        @*<select class="form-control">
                                                             <option selected="">Select Gender</option>
                                                             <option>Male</option>
                                                             <option>Female</option>
                                                             <option>Other</option>
-                                                        </select>
+                                                        </select>*@
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col">
                                                     <label>Location</label>
-                                                    <select class="form-control">
+                                                    @{ List<SelectListItem> countryList = new List<SelectListItem>();
+                                                        countryList.Add(new SelectListItem
+                                                        {
+                                                            Text = "Belgium",
+                                                            Value = "0"
+                                                        });
+                                                        countryList.Add(new SelectListItem
+                                                        {
+                                                            Text = "Canada",
+                                                            Value = "1"
+
+                                                        });
+                                                        countryList.Add(new SelectListItem
+                                                        {
+                                                            Text = "Denmark",
+                                                            Value = "2"
+                                                        });
+                                                        countryList.Add(new SelectListItem
+                                                        {
+                                                            Text = "Estonia",
+                                                            Value = "3"
+                                                        });
+                                                        countryList.Add(new SelectListItem
+                                                        {
+                                                            Text = "France",
+                                                            Value = "4"
+                                                        });
+                                                        countryList.Add(new SelectListItem
+                                                        {
+                                                            Text = "France",
+                                                            Value = "5"
+                                                        });
+                                                        countryList.Add(new SelectListItem
+                                                        {
+                                                            Text = "Poland",
+                                                            Value = "6"
+                                                        });
+                                                        countryList.Add(new SelectListItem
+                                                        {
+                                                            Text = "Germany",
+                                                            Value = "7"
+                                                        });
+                                                    }
+                                                    @Html.DropDownList("countryDropList", countryList, new { @class = "form-control" })
+                                                    @*<select class="form-control">
                                                         <option selected="">Select country</option>
                                                         <option>Belgium</option>
                                                         <option>Canada</option>
@@ -81,21 +145,85 @@
                                                         <option>France</option>
                                                         <option>Poland</option>
                                                         <option>Germany</option>
-                                                    </select>
+                                                    </select>*@
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col">
-                                                    <label>Diet</label> 
-                                                    <select class="form-control">
+                                                    <label>Diet</label>
+                                                    @{ List<SelectListItem> dietList = new List<SelectListItem>();
+                                                        countryList.Add(new SelectListItem
+                                                        {
+                                                            Text = "Omnivore",
+                                                            Value = "0"
+                                                        });
+                                                        countryList.Add(new SelectListItem
+                                                        {
+                                                            Text = "Omnivore_gf",
+                                                            Value = "1"
+
+                                                        });
+                                                        countryList.Add(new SelectListItem
+                                                        {
+                                                            Text = "Keto",
+                                                            Value = "2"
+                                                        });
+                                                        countryList.Add(new SelectListItem
+                                                        {
+                                                            Text = "Keto_gf",
+                                                            Value = "3"
+                                                        });
+                                                        countryList.Add(new SelectListItem
+                                                        {
+                                                            Text = "Ovo_lacto_vegetarian",
+                                                            Value = "4"
+                                                        });
+                                                        countryList.Add(new SelectListItem
+                                                        {
+                                                            Text = "Ovo_lacto_vegetarian_gf",
+                                                            Value = "5"
+                                                        });
+                                                        countryList.Add(new SelectListItem
+                                                        {
+                                                            Text = "Vegetarian",
+                                                            Value = "6"
+                                                        });
+                                                        countryList.Add(new SelectListItem
+                                                        {
+                                                            Text = "Vegetarian_gf",
+                                                            Value = "7"
+                                                        });
+                                                        countryList.Add(new SelectListItem
+                                                        {
+                                                            Text = "Vegan",
+                                                            Value = "8"
+                                                        });
+                                                        countryList.Add(new SelectListItem
+                                                        {
+                                                            Text = "Vegan_gf",
+                                                            Value = "9"
+                                                        });
+                                                        countryList.Add(new SelectListItem
+                                                        {
+                                                            Text = "Other",
+                                                            Value = "10"
+                                                        });
+                                                    }
+                                                    @Html.DropDownList("dietDropList", countryList, new { @class = "form-control" })
+                                                   @* <select class="form-control">
                                                         <option selected="">Select diet</option>
-                                                        <option>Omnivorous</option>
-                                                        <option>Semi-vegetarianism</option>
-                                                        <option>Lactive-vegetarianism</option>
-                                                        <option>Vegetarianism</option>
-                                                        <option>Fruitarianizm</option>
+                                                        <option>Omnivore</option>
+                                                        <option>Omnivore_gf</option>
+                                                        <option>Keto</option>
+                                                        <option>Keto_gf</option>
+                                                        <option>Ovo_lacto_vegetarian</option>
+                                                        <option>Ovo_lacto_vegetarian_gf</option>
+                                                        <option>Vegetarian</option>
+                                                        <option>Vegetarian_gf</option>
+                                                        <option>Vegan</option>
+                                                        <option>Vegan_gf</option>
                                                         <option>Other</option>
-                                                    </select>
+                                                    </select>*@
                                                 </div>
                                             </div>
                                             <div class="row">

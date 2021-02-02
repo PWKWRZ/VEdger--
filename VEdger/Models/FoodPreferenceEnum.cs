@@ -11,6 +11,7 @@
         vegetarian,
         vegetarian_gf,
         vegan,
-        vegan_gf
+        vegan_gf,
+        other
     }
 }

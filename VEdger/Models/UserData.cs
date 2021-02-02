@@ -14,6 +14,8 @@ namespace VEdger.Models
         public string first_name { get; set; }
         public string last_name { get; set; }
         public DateTime date_of_birth { get; set; }
+        public string username { get; set; }
+        public string email { get; set; }
         [Timestamp]
         public byte[] created_at { get; set; }
         public string location { get; set; }

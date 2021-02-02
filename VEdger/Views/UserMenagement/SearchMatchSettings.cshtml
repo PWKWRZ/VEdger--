@@ -18,10 +18,10 @@
                                             <h1>Maximum Distance in km</h1>
                                             <div class="box">
                                                 <div class="slider">
-                                                    <input type="range" min="0" max="300" value="0" />
+                                                    <input type="range" min="0" max="300" value="@Model.maximumDistance" />
                                                 </div>
                                                 <div class="value">0</div>
-                                            </div>
+                                            </div>                                                                         
                                         </div>
                                         <div class="row">
                                             <h1>Gender</h1>
@@ -95,7 +95,7 @@
                                         </div>
                                     <div class="row">
                                         <h1>Expected Dietary Preference</h1>
-                                        *@
+                                        
                                         <div class="check">
                                             @foreach(var checkbox in Model.fpe)
                                             {

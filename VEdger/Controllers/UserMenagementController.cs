@@ -16,7 +16,15 @@
         public ActionResult UserDataSettings()
         {
             var data = userDataRepository.Read<UserData>().FirstOrDefault();
-            return View(data);
+            if (data!= null)
+            {
+                return View(data);
+            }
+            var data2 = new UserData
+            {
+                first_name = "joe"
+            };
+            return View (data2);
         }
 
         [HttpPost]

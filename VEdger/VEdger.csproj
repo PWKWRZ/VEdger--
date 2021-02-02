@@ -180,7 +180,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\UserInfoController.cs" />
+    <Compile Include="Controllers\UserMenagementController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -204,14 +204,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BgImage\1.jpg" />
-
     <Content Include="BgImage\12.jpeg" />
     <Content Include="BgImage\main.jpg" />
     <Content Include="BgImage\broken.png" />
     <Content Include="BgImage\burger.png" />
     <Content Include="BgImage\Edit.png" />
     <Content Include="BgImage\heart.png" />
-
     <Content Include="BgImage\home.jpg" />
     <Content Include="BgImage\ham.jpg" />
     <Content Include="BgImage\Logo.png" />
@@ -243,9 +241,7 @@
     <Content Include="Style-Index.css" />
     <Content Include="Style-Login.css" />
     <Content Include="Style-Register.css" />
-
     <Content Include="Style-Settings.css" />
-
     <Content Include="Style-UserInfo.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -258,8 +254,8 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\MainPage\MainViewPage.cshtml" />
+    <Content Include="Views\UserMenagement\SearchMatchSettings.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
@@ -281,7 +277,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\UserInfo\Index.cshtml" />
+    <Content Include="Views\UserMenagement\UserDataSettings.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
